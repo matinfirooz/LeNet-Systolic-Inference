@@ -1,0 +1,13 @@
+test_accumulator_domain_bounds (test_reference.ReferenceTests.test_accumulator_domain_bounds) ... ok
+test_dataset_checksums_and_split (test_reference.ReferenceTests.test_dataset_checksums_and_split) ... ok
+test_exported_image_and_probability_mass (test_reference.ReferenceTests.test_exported_image_and_probability_mass) ... ok
+test_integer_convolution_independent_scalar (test_reference.ReferenceTests.test_integer_convolution_independent_scalar) ... ok
+test_lut_full_domain_and_signed_extremes (test_reference.ReferenceTests.test_lut_full_domain_and_signed_extremes) ... ok
+test_normalization_and_border (test_reference.ReferenceTests.test_normalization_and_border) ... ok
+test_parameter_layout (test_reference.ReferenceTests.test_parameter_layout) ... ok
+test_pool_exact_mean_before_lookup (test_reference.ReferenceTests.test_pool_exact_mean_before_lookup) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.030s
+
+OK

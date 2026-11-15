@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "author": "Matin Firoozbakht",
+  "github": "https://github.com/matinfirooz",
+  "parameters": 61706,
+  "train_images": 54000,
+  "validation_images": 6000,
+  "test": {
+    "n": 10000,
+    "correct": 8884,
+    "accuracy": 0.8884,
+    "cross_entropy": 0.3114386741638184
+  },
+  "validation": {
+    "n": 6000,
+    "correct": 5339,
+    "accuracy": 0.8898333333333334,
+    "cross_entropy": 0.28924677276611327
+  },
+  "best_epoch": 20,
+  "epochs_completed": 20,
+  "training_seconds": 104.91746024399981,
+  "torch_version": "2.5.1+cpu",
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "cpu_threads": 4,
+  "seed": 7,
+  "split_seed": 42,
+  "device": "cpu",
+  "configuration": {
+    "batch_size": 256,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "activation": "tanh after every convolution, pool, and F6",
+    "normalization": "pixel/255; two-pixel zero border"
+  },
+  "source_sha256": {
+    "software/model.py": "8cb5fd0d3d3f73a9f575f474792a210bca6ccff3706a19b5e45939d07eaaefa6",
+    "software/data.py": "fc2efca69d482dc68aad59e727acf91e65f6c267235a9f3492105101f5ee8313",
+    "scripts/train.py": "e8a0852f341b675763a2cc9221e420936ad533be65c86f503aa14025c474bcb3"
+  }
+}
