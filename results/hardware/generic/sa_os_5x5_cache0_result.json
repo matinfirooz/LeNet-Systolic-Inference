@@ -1,0 +1,153 @@
+{
+  "top": "sa_os_5x5",
+  "cache_enable": 0,
+  "status": "passed",
+  "generic_leaf_cells": {
+    "$sdffe": 151,
+    "$sdff": 2,
+    "$reduce_and": 27,
+    "$reduce_or": 2,
+    "$not": 2,
+    "$ge": 5,
+    "$logic_and": 37,
+    "$lt": 6,
+    "$add": 34,
+    "$shiftx": 10,
+    "$sub": 8,
+    "$mux": 14,
+    "$mul": 30,
+    "$eq": 1,
+    "$logic_not": 1,
+    "$logic_or": 25
+  },
+  "compute_pe_multipliers": [
+    {
+      "instance": "sa_os_5x5/rows[0].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[0].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[0].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[0].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[0].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[1].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[1].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[1].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[1].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[1].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[2].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[2].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[2].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[2].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[2].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[3].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[3].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[3].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[3].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[3].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[4].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[4].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[4].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[4].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    },
+    {
+      "instance": "sa_os_5x5/rows[4].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+      "a_bits": 16,
+      "b_bits": 16
+    }
+  ],
+  "generic_memories": 0,
+  "inferred_latches": 0,
+  "netlist": "results/hardware/generic/sa_os_5x5_cache0_netlist.json"
+}

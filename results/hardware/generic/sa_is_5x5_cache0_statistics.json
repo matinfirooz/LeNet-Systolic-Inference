@@ -1,0 +1,98 @@
+{
+   "creator": "Yosys 0.71 (git sha1 b4c586fd3, Release, GNU /opt/rh/gcc-toolset-14/root/usr/bin/c++ 14.2.1)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\sa_is_5x5": {
+         "num_wires":         333,
+         "num_wire_bits":     56711,
+         "num_pub_wires":     211,
+         "num_pub_wire_bits": 5311,
+         "num_ports":         8,
+         "num_port_bits":     2005,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         138,
+         "num_submodules":       25,
+         "num_cells_by_type": {
+            "$add": 9,
+            "$and": 5,
+            "$eq": 1,
+            "$ge": 10,
+            "$logic_and": 22,
+            "$logic_not": 1,
+            "$lt": 11,
+            "$mul": 5,
+            "$mux": 26,
+            "$neg": 5,
+            "$not": 7,
+            "$or": 5,
+            "$reduce_and": 1,
+            "$reduce_or": 2,
+            "$sdff": 2,
+            "$sdffe": 2,
+            "$shift": 10,
+            "$shiftx": 5,
+            "$sub": 9,
+            "pe_is": 25
+         }
+      },
+      "\\pe_is": {
+         "num_wires":         19,
+         "num_wire_bits":     251,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 200,
+         "num_ports":         13,
+         "num_port_bits":     152,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         10,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$add": 1,
+            "$logic_and": 1,
+            "$mul": 1,
+            "$reduce_and": 1,
+            "$reduce_or": 1,
+            "$sdffe": 5
+         }
+      }
+   },
+      "design": {
+         "num_wires":         808,
+         "num_wire_bits":     62986,
+         "num_pub_wires":     586,
+         "num_pub_wire_bits": 10311,
+         "num_ports":         333,
+         "num_port_bits":     5805,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         388,
+         "num_submodules":       25,
+         "num_cells_by_type": {
+            "$add": 34,
+            "$and": 5,
+            "$eq": 1,
+            "$ge": 10,
+            "$logic_and": 47,
+            "$logic_not": 1,
+            "$lt": 11,
+            "$mul": 30,
+            "$mux": 26,
+            "$neg": 5,
+            "$not": 7,
+            "$or": 5,
+            "$reduce_and": 26,
+            "$reduce_or": 27,
+            "$sdff": 2,
+            "$sdffe": 127,
+            "$shift": 10,
+            "$shiftx": 5,
+            "$sub": 9,
+            "pe_is": 25
+         }
+      }
+}
+

@@ -1,0 +1,1184 @@
+
+-- Running command `read_verilog -sv -DSYNTHESIS hardware/rtl/activation_memory.v hardware/rtl/argmax_serial.v hardware/rtl/average_pool.v hardware/rtl/bias_rom.v hardware/rtl/dram_model.v hardware/rtl/fraction_divider.v hardware/rtl/layer_config.v hardware/rtl/lenet_core.v hardware/rtl/lenet_top_is.v hardware/rtl/lenet_top_os.v hardware/rtl/lenet_top_ws.v hardware/rtl/patch_address.v hardware/rtl/pe_is.v hardware/rtl/pe_os.v hardware/rtl/pe_ws.v hardware/rtl/pixel_frontend.v hardware/rtl/pool_address.v hardware/rtl/sa_is_5x5.v hardware/rtl/sa_os_5x5.v hardware/rtl/sa_tile_engine.v hardware/rtl/sa_ws_5x5.v hardware/rtl/softmax10.v hardware/rtl/tanh_lut.v hardware/rtl/tile_accumulator.v hardware/rtl/weight_cache.v hardware/rtl/weight_memory.v' --
+
+1. Executing Verilog-2005 frontend: hardware/rtl/activation_memory.v
+Parsing SystemVerilog input from `hardware/rtl/activation_memory.v' to AST representation.
+Generating RTLIL representation for module `\activation_memory'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: hardware/rtl/argmax_serial.v
+Parsing SystemVerilog input from `hardware/rtl/argmax_serial.v' to AST representation.
+Generating RTLIL representation for module `\argmax_serial'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: hardware/rtl/average_pool.v
+Parsing SystemVerilog input from `hardware/rtl/average_pool.v' to AST representation.
+Generating RTLIL representation for module `\average_pool'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: hardware/rtl/bias_rom.v
+Parsing SystemVerilog input from `hardware/rtl/bias_rom.v' to AST representation.
+Generating RTLIL representation for module `\bias_rom'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: hardware/rtl/dram_model.v
+Parsing SystemVerilog input from `hardware/rtl/dram_model.v' to AST representation.
+Generating RTLIL representation for module `\dram_model'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: hardware/rtl/fraction_divider.v
+Parsing SystemVerilog input from `hardware/rtl/fraction_divider.v' to AST representation.
+Generating RTLIL representation for module `\fraction_divider'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: hardware/rtl/layer_config.v
+Parsing SystemVerilog input from `hardware/rtl/layer_config.v' to AST representation.
+Generating RTLIL representation for module `\layer_config'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: hardware/rtl/lenet_core.v
+Parsing SystemVerilog input from `hardware/rtl/lenet_core.v' to AST representation.
+Generating RTLIL representation for module `\lenet_core'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: hardware/rtl/lenet_top_is.v
+Parsing SystemVerilog input from `hardware/rtl/lenet_top_is.v' to AST representation.
+Generating RTLIL representation for module `\lenet_top_is'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: hardware/rtl/lenet_top_os.v
+Parsing SystemVerilog input from `hardware/rtl/lenet_top_os.v' to AST representation.
+Generating RTLIL representation for module `\lenet_top_os'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: hardware/rtl/lenet_top_ws.v
+Parsing SystemVerilog input from `hardware/rtl/lenet_top_ws.v' to AST representation.
+Generating RTLIL representation for module `\lenet_top_ws'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: hardware/rtl/patch_address.v
+Parsing SystemVerilog input from `hardware/rtl/patch_address.v' to AST representation.
+Generating RTLIL representation for module `\patch_address'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: hardware/rtl/pe_is.v
+Parsing SystemVerilog input from `hardware/rtl/pe_is.v' to AST representation.
+Generating RTLIL representation for module `\pe_is'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: hardware/rtl/pe_os.v
+Parsing SystemVerilog input from `hardware/rtl/pe_os.v' to AST representation.
+Generating RTLIL representation for module `\pe_os'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: hardware/rtl/pe_ws.v
+Parsing SystemVerilog input from `hardware/rtl/pe_ws.v' to AST representation.
+Generating RTLIL representation for module `\pe_ws'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: hardware/rtl/pixel_frontend.v
+Parsing SystemVerilog input from `hardware/rtl/pixel_frontend.v' to AST representation.
+Generating RTLIL representation for module `\pixel_frontend'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: hardware/rtl/pool_address.v
+Parsing SystemVerilog input from `hardware/rtl/pool_address.v' to AST representation.
+Generating RTLIL representation for module `\pool_address'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: hardware/rtl/sa_is_5x5.v
+Parsing SystemVerilog input from `hardware/rtl/sa_is_5x5.v' to AST representation.
+Generating RTLIL representation for module `\sa_is_5x5'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: hardware/rtl/sa_os_5x5.v
+Parsing SystemVerilog input from `hardware/rtl/sa_os_5x5.v' to AST representation.
+Generating RTLIL representation for module `\sa_os_5x5'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: hardware/rtl/sa_tile_engine.v
+Parsing SystemVerilog input from `hardware/rtl/sa_tile_engine.v' to AST representation.
+Generating RTLIL representation for module `\sa_tile_engine'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: hardware/rtl/sa_ws_5x5.v
+Parsing SystemVerilog input from `hardware/rtl/sa_ws_5x5.v' to AST representation.
+Generating RTLIL representation for module `\sa_ws_5x5'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: hardware/rtl/softmax10.v
+Parsing SystemVerilog input from `hardware/rtl/softmax10.v' to AST representation.
+Generating RTLIL representation for module `\softmax10'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: hardware/rtl/tanh_lut.v
+Parsing SystemVerilog input from `hardware/rtl/tanh_lut.v' to AST representation.
+Generating RTLIL representation for module `\tanh_lut'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: hardware/rtl/tile_accumulator.v
+Parsing SystemVerilog input from `hardware/rtl/tile_accumulator.v' to AST representation.
+Generating RTLIL representation for module `\tile_accumulator'.
+Warning: Replacing memory \acc with list of registers. See hardware/rtl/tile_accumulator.v:7
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: hardware/rtl/weight_cache.v
+Parsing SystemVerilog input from `hardware/rtl/weight_cache.v' to AST representation.
+Generating RTLIL representation for module `\weight_cache'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: hardware/rtl/weight_memory.v
+Parsing SystemVerilog input from `hardware/rtl/weight_memory.v' to AST representation.
+Generating RTLIL representation for module `\weight_memory'.
+Successfully finished Verilog frontend.
+
+-- Running command `hierarchy -check -top sa_os_5x5' --
+
+27. Executing HIERARCHY pass (managing design hierarchy).
+
+27.1. Analyzing design hierarchy..
+Top module:  \sa_os_5x5
+Used module:     \pe_os
+
+27.2. Analyzing design hierarchy..
+Top module:  \sa_os_5x5
+Used module:     \pe_os
+Removing unused module `\weight_memory'.
+Removing unused module `\weight_cache'.
+Removing unused module `\tile_accumulator'.
+Removing unused module `\tanh_lut'.
+Removing unused module `\softmax10'.
+Removing unused module `\sa_ws_5x5'.
+Removing unused module `\sa_tile_engine'.
+Removing unused module `\sa_is_5x5'.
+Removing unused module `\pool_address'.
+Removing unused module `\pixel_frontend'.
+Removing unused module `\pe_ws'.
+Removing unused module `\pe_is'.
+Removing unused module `\patch_address'.
+Removing unused module `\lenet_top_ws'.
+Removing unused module `\lenet_top_os'.
+Removing unused module `\lenet_top_is'.
+Removing unused module `\lenet_core'.
+Removing unused module `\layer_config'.
+Removing unused module `\fraction_divider'.
+Removing unused module `\dram_model'.
+Removing unused module `\bias_rom'.
+Removing unused module `\average_pool'.
+Removing unused module `\argmax_serial'.
+Removing unused module `\activation_memory'.
+Removed 24 unused modules.
+
+-- Running command `proc' --
+
+28. Executing PROC pass (convert processes to netlists).
+
+28.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+28.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $hardware/rtl/pe_os.v:7$proc$389 in module pe_os.
+Marked 4 switch rules as full_case in process $hardware/rtl/sa_os_5x5.v:26$proc$975 in module sa_os_5x5.
+Removed a total of 0 dead cases.
+
+28.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 126 assignments to connections.
+
+28.4. Executing PROC_INIT pass (extract init attributes).
+
+28.5. Executing PROC_ARST pass (detect async resets in processes).
+
+28.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~7 debug messages>
+
+28.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+     1/5: $0\accumulator[47:0]
+     2/5: $0\av_out[0:0]
+     3/5: $0\a_out[15:0]
+     4/5: $0\bv_out[0:0]
+     5/5: $0\b_out[15:0]
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1207'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1206'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1205'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1204'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1203'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1202'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1201'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1200'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1199'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1198'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1197'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1196'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1195'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1194'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1193'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1192'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1191'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1190'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1189'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1188'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1187'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1186'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1185'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1184'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1183'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1182'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1181'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1180'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1179'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1178'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1177'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1176'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1175'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1174'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1173'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1172'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1171'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1170'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1169'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1168'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1167'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1166'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1165'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1164'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1163'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1162'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1161'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1160'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1159'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1158'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1157'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1156'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1155'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1154'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1153'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1152'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1151'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1150'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1149'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1148'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1147'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1146'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1145'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1144'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1143'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1142'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1141'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1140'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1139'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1138'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1137'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1136'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1135'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1134'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1133'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1132'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1131'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1130'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1129'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1128'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1127'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1126'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1125'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1124'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1123'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1122'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1121'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1120'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1119'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1118'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1117'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1116'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1115'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1114'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1113'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1112'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1111'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1110'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1109'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1108'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1107'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1106'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1105'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1104'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1103'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1102'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1101'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1100'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1099'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1098'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1097'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1096'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1095'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1094'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1093'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1092'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1091'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1090'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1089'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1088'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1087'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1086'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1085'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1084'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1083'.
+Creating decoders for process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+     1/32: $4\i[31:0]
+     2/32: $0\c_tile[1199:0] [1199:1152]
+     3/32: $0\c_tile[1199:0] [1151:1104]
+     4/32: $0\c_tile[1199:0] [1103:1056]
+     5/32: $0\c_tile[1199:0] [1055:1008]
+     6/32: $0\c_tile[1199:0] [1007:960]
+     7/32: $0\c_tile[1199:0] [959:912]
+     8/32: $0\c_tile[1199:0] [911:864]
+     9/32: $0\c_tile[1199:0] [863:816]
+    10/32: $0\c_tile[1199:0] [815:768]
+    11/32: $0\c_tile[1199:0] [767:720]
+    12/32: $0\c_tile[1199:0] [719:672]
+    13/32: $0\c_tile[1199:0] [671:624]
+    14/32: $0\c_tile[1199:0] [623:576]
+    15/32: $0\c_tile[1199:0] [575:528]
+    16/32: $0\c_tile[1199:0] [527:480]
+    17/32: $0\c_tile[1199:0] [479:432]
+    18/32: $0\c_tile[1199:0] [431:384]
+    19/32: $0\c_tile[1199:0] [383:336]
+    20/32: $0\c_tile[1199:0] [335:288]
+    21/32: $0\c_tile[1199:0] [287:240]
+    22/32: $0\c_tile[1199:0] [239:192]
+    23/32: $0\c_tile[1199:0] [191:144]
+    24/32: $0\c_tile[1199:0] [143:96]
+    25/32: $0\c_tile[1199:0] [95:48]
+    26/32: $0\c_tile[1199:0] [47:0]
+    27/32: $2\i[31:0]
+    28/32: $0\done[0:0]
+    29/32: $1\i[31:0]
+    30/32: $0\step[3:0]
+    31/32: $3\i[31:0]
+    32/32: $0\busy[0:0]
+
+28.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sa_os_5x5.\acc[24]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1207'.
+No latch inferred for signal `\sa_os_5x5.\bv[24]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1206'.
+No latch inferred for signal `\sa_os_5x5.\av[24]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1205'.
+No latch inferred for signal `\sa_os_5x5.\be[24]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1204'.
+No latch inferred for signal `\sa_os_5x5.\ae[24]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1203'.
+No latch inferred for signal `\sa_os_5x5.\acc[23]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1202'.
+No latch inferred for signal `\sa_os_5x5.\bv[23]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1201'.
+No latch inferred for signal `\sa_os_5x5.\av[23]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1200'.
+No latch inferred for signal `\sa_os_5x5.\be[23]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1199'.
+No latch inferred for signal `\sa_os_5x5.\ae[23]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1198'.
+No latch inferred for signal `\sa_os_5x5.\acc[22]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1197'.
+No latch inferred for signal `\sa_os_5x5.\bv[22]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1196'.
+No latch inferred for signal `\sa_os_5x5.\av[22]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1195'.
+No latch inferred for signal `\sa_os_5x5.\be[22]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1194'.
+No latch inferred for signal `\sa_os_5x5.\ae[22]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1193'.
+No latch inferred for signal `\sa_os_5x5.\acc[21]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1192'.
+No latch inferred for signal `\sa_os_5x5.\bv[21]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1191'.
+No latch inferred for signal `\sa_os_5x5.\av[21]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1190'.
+No latch inferred for signal `\sa_os_5x5.\be[21]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1189'.
+No latch inferred for signal `\sa_os_5x5.\ae[21]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1188'.
+No latch inferred for signal `\sa_os_5x5.\acc[20]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1187'.
+No latch inferred for signal `\sa_os_5x5.\bv[20]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1186'.
+No latch inferred for signal `\sa_os_5x5.\av[20]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1185'.
+No latch inferred for signal `\sa_os_5x5.\be[20]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1184'.
+No latch inferred for signal `\sa_os_5x5.\ae[20]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1183'.
+No latch inferred for signal `\sa_os_5x5.\acc[19]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1182'.
+No latch inferred for signal `\sa_os_5x5.\bv[19]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1181'.
+No latch inferred for signal `\sa_os_5x5.\av[19]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1180'.
+No latch inferred for signal `\sa_os_5x5.\be[19]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1179'.
+No latch inferred for signal `\sa_os_5x5.\ae[19]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1178'.
+No latch inferred for signal `\sa_os_5x5.\acc[18]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1177'.
+No latch inferred for signal `\sa_os_5x5.\bv[18]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1176'.
+No latch inferred for signal `\sa_os_5x5.\av[18]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1175'.
+No latch inferred for signal `\sa_os_5x5.\be[18]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1174'.
+No latch inferred for signal `\sa_os_5x5.\ae[18]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1173'.
+No latch inferred for signal `\sa_os_5x5.\acc[17]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1172'.
+No latch inferred for signal `\sa_os_5x5.\bv[17]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1171'.
+No latch inferred for signal `\sa_os_5x5.\av[17]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1170'.
+No latch inferred for signal `\sa_os_5x5.\be[17]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1169'.
+No latch inferred for signal `\sa_os_5x5.\ae[17]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1168'.
+No latch inferred for signal `\sa_os_5x5.\acc[16]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1167'.
+No latch inferred for signal `\sa_os_5x5.\bv[16]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1166'.
+No latch inferred for signal `\sa_os_5x5.\av[16]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1165'.
+No latch inferred for signal `\sa_os_5x5.\be[16]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1164'.
+No latch inferred for signal `\sa_os_5x5.\ae[16]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1163'.
+No latch inferred for signal `\sa_os_5x5.\acc[15]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1162'.
+No latch inferred for signal `\sa_os_5x5.\bv[15]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1161'.
+No latch inferred for signal `\sa_os_5x5.\av[15]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1160'.
+No latch inferred for signal `\sa_os_5x5.\be[15]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1159'.
+No latch inferred for signal `\sa_os_5x5.\ae[15]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1158'.
+No latch inferred for signal `\sa_os_5x5.\acc[14]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1157'.
+No latch inferred for signal `\sa_os_5x5.\bv[14]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1156'.
+No latch inferred for signal `\sa_os_5x5.\av[14]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1155'.
+No latch inferred for signal `\sa_os_5x5.\be[14]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1154'.
+No latch inferred for signal `\sa_os_5x5.\ae[14]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1153'.
+No latch inferred for signal `\sa_os_5x5.\acc[13]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1152'.
+No latch inferred for signal `\sa_os_5x5.\bv[13]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1151'.
+No latch inferred for signal `\sa_os_5x5.\av[13]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1150'.
+No latch inferred for signal `\sa_os_5x5.\be[13]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1149'.
+No latch inferred for signal `\sa_os_5x5.\ae[13]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1148'.
+No latch inferred for signal `\sa_os_5x5.\acc[12]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1147'.
+No latch inferred for signal `\sa_os_5x5.\bv[12]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1146'.
+No latch inferred for signal `\sa_os_5x5.\av[12]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1145'.
+No latch inferred for signal `\sa_os_5x5.\be[12]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1144'.
+No latch inferred for signal `\sa_os_5x5.\ae[12]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1143'.
+No latch inferred for signal `\sa_os_5x5.\acc[11]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1142'.
+No latch inferred for signal `\sa_os_5x5.\bv[11]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1141'.
+No latch inferred for signal `\sa_os_5x5.\av[11]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1140'.
+No latch inferred for signal `\sa_os_5x5.\be[11]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1139'.
+No latch inferred for signal `\sa_os_5x5.\ae[11]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1138'.
+No latch inferred for signal `\sa_os_5x5.\acc[10]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1137'.
+No latch inferred for signal `\sa_os_5x5.\bv[10]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1136'.
+No latch inferred for signal `\sa_os_5x5.\av[10]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1135'.
+No latch inferred for signal `\sa_os_5x5.\be[10]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1134'.
+No latch inferred for signal `\sa_os_5x5.\ae[10]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1133'.
+No latch inferred for signal `\sa_os_5x5.\acc[9]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1132'.
+No latch inferred for signal `\sa_os_5x5.\bv[9]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1131'.
+No latch inferred for signal `\sa_os_5x5.\av[9]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1130'.
+No latch inferred for signal `\sa_os_5x5.\be[9]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1129'.
+No latch inferred for signal `\sa_os_5x5.\ae[9]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1128'.
+No latch inferred for signal `\sa_os_5x5.\acc[8]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1127'.
+No latch inferred for signal `\sa_os_5x5.\bv[8]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1126'.
+No latch inferred for signal `\sa_os_5x5.\av[8]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1125'.
+No latch inferred for signal `\sa_os_5x5.\be[8]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1124'.
+No latch inferred for signal `\sa_os_5x5.\ae[8]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1123'.
+No latch inferred for signal `\sa_os_5x5.\acc[7]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1122'.
+No latch inferred for signal `\sa_os_5x5.\bv[7]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1121'.
+No latch inferred for signal `\sa_os_5x5.\av[7]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1120'.
+No latch inferred for signal `\sa_os_5x5.\be[7]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1119'.
+No latch inferred for signal `\sa_os_5x5.\ae[7]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1118'.
+No latch inferred for signal `\sa_os_5x5.\acc[6]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1117'.
+No latch inferred for signal `\sa_os_5x5.\bv[6]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1116'.
+No latch inferred for signal `\sa_os_5x5.\av[6]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1115'.
+No latch inferred for signal `\sa_os_5x5.\be[6]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1114'.
+No latch inferred for signal `\sa_os_5x5.\ae[6]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1113'.
+No latch inferred for signal `\sa_os_5x5.\acc[5]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1112'.
+No latch inferred for signal `\sa_os_5x5.\bv[5]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1111'.
+No latch inferred for signal `\sa_os_5x5.\av[5]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1110'.
+No latch inferred for signal `\sa_os_5x5.\be[5]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1109'.
+No latch inferred for signal `\sa_os_5x5.\ae[5]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1108'.
+No latch inferred for signal `\sa_os_5x5.\acc[4]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1107'.
+No latch inferred for signal `\sa_os_5x5.\bv[4]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1106'.
+No latch inferred for signal `\sa_os_5x5.\av[4]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1105'.
+No latch inferred for signal `\sa_os_5x5.\be[4]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1104'.
+No latch inferred for signal `\sa_os_5x5.\ae[4]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1103'.
+No latch inferred for signal `\sa_os_5x5.\acc[3]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1102'.
+No latch inferred for signal `\sa_os_5x5.\bv[3]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1101'.
+No latch inferred for signal `\sa_os_5x5.\av[3]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1100'.
+No latch inferred for signal `\sa_os_5x5.\be[3]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1099'.
+No latch inferred for signal `\sa_os_5x5.\ae[3]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1098'.
+No latch inferred for signal `\sa_os_5x5.\acc[2]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1097'.
+No latch inferred for signal `\sa_os_5x5.\bv[2]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1096'.
+No latch inferred for signal `\sa_os_5x5.\av[2]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1095'.
+No latch inferred for signal `\sa_os_5x5.\be[2]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1094'.
+No latch inferred for signal `\sa_os_5x5.\ae[2]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1093'.
+No latch inferred for signal `\sa_os_5x5.\acc[1]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1092'.
+No latch inferred for signal `\sa_os_5x5.\bv[1]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1091'.
+No latch inferred for signal `\sa_os_5x5.\av[1]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1090'.
+No latch inferred for signal `\sa_os_5x5.\be[1]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1089'.
+No latch inferred for signal `\sa_os_5x5.\ae[1]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1088'.
+No latch inferred for signal `\sa_os_5x5.\acc[0]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1087'.
+No latch inferred for signal `\sa_os_5x5.\bv[0]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1086'.
+No latch inferred for signal `\sa_os_5x5.\av[0]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1085'.
+No latch inferred for signal `\sa_os_5x5.\be[0]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1084'.
+No latch inferred for signal `\sa_os_5x5.\ae[0]' from process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1083'.
+
+28.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pe_os.\b_out' using process `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+  created $dff cell `$procdff$2445' with positive edge clock.
+Creating register for signal `\pe_os.\bv_out' using process `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+  created $dff cell `$procdff$2446' with positive edge clock.
+Creating register for signal `\pe_os.\a_out' using process `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+  created $dff cell `$procdff$2447' with positive edge clock.
+Creating register for signal `\pe_os.\av_out' using process `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+  created $dff cell `$procdff$2448' with positive edge clock.
+Creating register for signal `\pe_os.\accumulator' using process `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+  created $dff cell `$procdff$2449' with positive edge clock.
+Creating register for signal `\sa_os_5x5.\i' using process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+  created $dff cell `$procdff$2450' with positive edge clock.
+Creating register for signal `\sa_os_5x5.\busy' using process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+  created $dff cell `$procdff$2451' with positive edge clock.
+Creating register for signal `\sa_os_5x5.\done' using process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+  created $dff cell `$procdff$2452' with positive edge clock.
+Creating register for signal `\sa_os_5x5.\c_tile' using process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+  created $dff cell `$procdff$2453' with positive edge clock.
+Creating register for signal `\sa_os_5x5.\step' using process `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+  created $dff cell `$procdff$2454' with positive edge clock.
+
+28.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+28.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+Removing empty process `pe_os.$hardware/rtl/pe_os.v:7$proc$389'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1207'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1206'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1205'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1204'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1203'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1202'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1201'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1200'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1199'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1198'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1197'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1196'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1195'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1194'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1193'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1192'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1191'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1190'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1189'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1188'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1187'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1186'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1185'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1184'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1183'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1182'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1181'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1180'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1179'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1178'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1177'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1176'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1175'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1174'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1173'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1172'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1171'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1170'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1169'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1168'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1167'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1166'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1165'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1164'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1163'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1162'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1161'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1160'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1159'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1158'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1157'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1156'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1155'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1154'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1153'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1152'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1151'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1150'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1149'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1148'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1147'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1146'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1145'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1144'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1143'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1142'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1141'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1140'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1139'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1138'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1137'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1136'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1135'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1134'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1133'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1132'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1131'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1130'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1129'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1128'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1127'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1126'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1125'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1124'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1123'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1122'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1121'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1120'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1119'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1118'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1117'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1116'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1115'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1114'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1113'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1112'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1111'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1110'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1109'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1108'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1107'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1106'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1105'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1104'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1103'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1102'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1101'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1100'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1099'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1098'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1097'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1096'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1095'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1094'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1093'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1092'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1091'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1090'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1089'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1088'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1087'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1086'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1085'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:22$proc$1084'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:21$proc$1083'.
+Found and cleaned up 4 empty switches in `\sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+Removing empty process `sa_os_5x5.$hardware/rtl/sa_os_5x5.v:26$proc$975'.
+Cleaned up 7 empty switches.
+
+28.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+-- Running command `opt' --
+
+29. Executing OPT pass (performing simple optimizations).
+
+29.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+<suppressed ~34 debug messages>
+
+29.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 20 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 253 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Computing hashes of 242 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Computing hashes of 237 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Computing hashes of 232 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+<suppressed ~63 debug messages>
+Removed a total of 21 cells.
+
+29.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pe_os..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sa_os_5x5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$2437: \busy -> 1'0
+      Replacing known input bits on port A of cell $procmux$2435: \busy -> 1'1
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$2089.
+    dead port 1/2 on $mux $procmux$2086.
+    dead port 2/2 on $mux $procmux$2083.
+    dead port 1/2 on $mux $procmux$2431.
+    dead port 1/2 on $mux $procmux$2428.
+    dead port 1/2 on $mux $procmux$2395.
+Removed 6 multiplexer ports.
+<suppressed ~187 debug messages>
+
+29.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pe_os.
+  Optimizing cells in module \sa_os_5x5.
+Performed a total of 0 changes.
+
+29.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 20 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 226 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Removed a total of 0 cells.
+
+29.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$2445 ($dff) from module pe_os (D = $procmux$2074_Y, Q = \b_out, rval = 16'0000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$2455 ($sdff) from module pe_os (D = \b_in, Q = \b_out).
+Adding SRST signal on $procdff$2446 ($dff) from module pe_os (D = $procmux$2069_Y, Q = \bv_out, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2457 ($sdff) from module pe_os (D = \bv_in, Q = \bv_out).
+Adding SRST signal on $procdff$2447 ($dff) from module pe_os (D = $procmux$2064_Y, Q = \a_out, rval = 16'0000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$2459 ($sdff) from module pe_os (D = \a_in, Q = \a_out).
+Adding SRST signal on $procdff$2448 ($dff) from module pe_os (D = $procmux$2059_Y, Q = \av_out, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$2461 ($sdff) from module pe_os (D = \av_in, Q = \av_out).
+Adding SRST signal on $procdff$2449 ($dff) from module pe_os (D = $procmux$2054_Y, Q = \accumulator, rval = 48'000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$2463 ($sdff) from module pe_os (D = $hardware/rtl/pe_os.v:11$add$392_Y, Q = \accumulator).
+Adding SRST signal on $procdff$2454 ($dff) from module sa_os_5x5 (D = $procmux$2416_Y, Q = \step, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:337:slice$2467 ($sdff) from module sa_os_5x5 (D = $hardware/rtl/sa_os_5x5.v:33$add$977_Y, Q = \step).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2095_Y, Q = \c_tile [1199:1152], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2107_Y, Q = \c_tile [1151:1104], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2119_Y, Q = \c_tile [1103:1056], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2131_Y, Q = \c_tile [1055:1008], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2143_Y, Q = \c_tile [1007:960], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2155_Y, Q = \c_tile [959:912], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2167_Y, Q = \c_tile [911:864], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2179_Y, Q = \c_tile [863:816], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2191_Y, Q = \c_tile [815:768], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2203_Y, Q = \c_tile [767:720], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2215_Y, Q = \c_tile [719:672], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2227_Y, Q = \c_tile [671:624], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2239_Y, Q = \c_tile [623:576], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2251_Y, Q = \c_tile [575:528], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2263_Y, Q = \c_tile [527:480], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2275_Y, Q = \c_tile [479:432], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2287_Y, Q = \c_tile [431:384], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2299_Y, Q = \c_tile [383:336], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2311_Y, Q = \c_tile [335:288], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2323_Y, Q = \c_tile [287:240], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2335_Y, Q = \c_tile [239:192], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2347_Y, Q = \c_tile [191:144], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2359_Y, Q = \c_tile [143:96], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2371_Y, Q = \c_tile [95:48], rval = 48'000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$2453 ($dff) from module sa_os_5x5 (D = $procmux$2383_Y, Q = \c_tile [47:0], rval = 48'000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$2547 ($sdff) from module sa_os_5x5 (D = \acc[0], Q = \c_tile [47:0]).
+Adding EN signal on $auto$ff.cc:337:slice$2544 ($sdff) from module sa_os_5x5 (D = \acc[1], Q = \c_tile [95:48]).
+Adding EN signal on $auto$ff.cc:337:slice$2541 ($sdff) from module sa_os_5x5 (D = \acc[2], Q = \c_tile [143:96]).
+Adding EN signal on $auto$ff.cc:337:slice$2538 ($sdff) from module sa_os_5x5 (D = \acc[3], Q = \c_tile [191:144]).
+Adding EN signal on $auto$ff.cc:337:slice$2535 ($sdff) from module sa_os_5x5 (D = \acc[4], Q = \c_tile [239:192]).
+Adding EN signal on $auto$ff.cc:337:slice$2532 ($sdff) from module sa_os_5x5 (D = \acc[5], Q = \c_tile [287:240]).
+Adding EN signal on $auto$ff.cc:337:slice$2529 ($sdff) from module sa_os_5x5 (D = \acc[6], Q = \c_tile [335:288]).
+Adding EN signal on $auto$ff.cc:337:slice$2526 ($sdff) from module sa_os_5x5 (D = \acc[7], Q = \c_tile [383:336]).
+Adding EN signal on $auto$ff.cc:337:slice$2523 ($sdff) from module sa_os_5x5 (D = \acc[8], Q = \c_tile [431:384]).
+Adding EN signal on $auto$ff.cc:337:slice$2520 ($sdff) from module sa_os_5x5 (D = \acc[9], Q = \c_tile [479:432]).
+Adding EN signal on $auto$ff.cc:337:slice$2517 ($sdff) from module sa_os_5x5 (D = \acc[10], Q = \c_tile [527:480]).
+Adding EN signal on $auto$ff.cc:337:slice$2514 ($sdff) from module sa_os_5x5 (D = \acc[11], Q = \c_tile [575:528]).
+Adding EN signal on $auto$ff.cc:337:slice$2511 ($sdff) from module sa_os_5x5 (D = \acc[12], Q = \c_tile [623:576]).
+Adding EN signal on $auto$ff.cc:337:slice$2508 ($sdff) from module sa_os_5x5 (D = \acc[13], Q = \c_tile [671:624]).
+Adding EN signal on $auto$ff.cc:337:slice$2505 ($sdff) from module sa_os_5x5 (D = \acc[14], Q = \c_tile [719:672]).
+Adding EN signal on $auto$ff.cc:337:slice$2502 ($sdff) from module sa_os_5x5 (D = \acc[15], Q = \c_tile [767:720]).
+Adding EN signal on $auto$ff.cc:337:slice$2499 ($sdff) from module sa_os_5x5 (D = \acc[16], Q = \c_tile [815:768]).
+Adding EN signal on $auto$ff.cc:337:slice$2496 ($sdff) from module sa_os_5x5 (D = \acc[17], Q = \c_tile [863:816]).
+Adding EN signal on $auto$ff.cc:337:slice$2493 ($sdff) from module sa_os_5x5 (D = \acc[18], Q = \c_tile [911:864]).
+Adding EN signal on $auto$ff.cc:337:slice$2490 ($sdff) from module sa_os_5x5 (D = \acc[19], Q = \c_tile [959:912]).
+Adding EN signal on $auto$ff.cc:337:slice$2487 ($sdff) from module sa_os_5x5 (D = \acc[20], Q = \c_tile [1007:960]).
+Adding EN signal on $auto$ff.cc:337:slice$2484 ($sdff) from module sa_os_5x5 (D = \acc[21], Q = \c_tile [1055:1008]).
+Adding EN signal on $auto$ff.cc:337:slice$2481 ($sdff) from module sa_os_5x5 (D = \acc[22], Q = \c_tile [1103:1056]).
+Adding EN signal on $auto$ff.cc:337:slice$2478 ($sdff) from module sa_os_5x5 (D = \acc[23], Q = \c_tile [1151:1104]).
+Adding EN signal on $auto$ff.cc:337:slice$2475 ($sdff) from module sa_os_5x5 (D = \acc[24], Q = \c_tile [1199:1152]).
+Adding SRST signal on $procdff$2452 ($dff) from module sa_os_5x5 (D = $procmux$2399_Y, Q = \done, rval = 1'0).
+Adding SRST signal on $procdff$2451 ($dff) from module sa_os_5x5 (D = $procmux$2440_Y, Q = \busy, rval = 1'0).
+Adding EN signal on $procdff$2450 ($dff) from module sa_os_5x5 (D = $2\i[31:0], Q = \i).
+
+29.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pe_os..
+Finding unused cells or wires in module \sa_os_5x5..
+Removed 124 unused cells and 585 unused wires.
+<suppressed ~140 debug messages>
+
+29.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+29.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+29.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pe_os..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sa_os_5x5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+29.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pe_os.
+  Optimizing cells in module \sa_os_5x5.
+Performed a total of 0 changes.
+
+29.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 10 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 179 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Computing hashes of 130 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+<suppressed ~147 debug messages>
+Removed a total of 49 cells.
+
+29.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+29.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pe_os..
+Finding unused cells or wires in module \sa_os_5x5..
+Removed 0 unused cells and 49 unused wires.
+<suppressed ~1 debug messages>
+
+29.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+29.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+29.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pe_os..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sa_os_5x5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+29.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pe_os.
+  Optimizing cells in module \sa_os_5x5.
+Performed a total of 0 changes.
+
+29.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 10 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 130 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Removed a total of 0 cells.
+
+29.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+29.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pe_os..
+Finding unused cells or wires in module \sa_os_5x5..
+
+29.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+29.23. Finished fast OPT passes. (There is nothing left to do.)
+
+-- Running command `wreduce' --
+
+30. Executing WREDUCE pass (reducing word size of cells).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:6$lt$973 ($lt).
+Removed top 23 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$shiftx$986 ($shiftx).
+Removed top 31 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:18$ge$988 ($ge).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:18$lt$990 ($lt).
+Removed top 28 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$993 ($mul).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$993 ($mul).
+Removed top 25 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$993 ($mul).
+Removed top 20 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$shiftx$997 ($shiftx).
+Removed top 31 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1003 ($sub).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1003 ($sub).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1004 ($mul) from unsigned to signed.
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1004 ($mul).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1004 ($mul).
+Removed top 23 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1004 ($mul).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1005 ($add) from unsigned to signed.
+Removed top 23 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1005 ($add).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1005 ($add).
+Removed top 22 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1005 ($add).
+Removed top 18 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$shiftx$1008 ($shiftx).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1014 ($sub).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1014 ($sub).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1015 ($mul) from unsigned to signed.
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1015 ($mul).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1015 ($mul).
+Removed top 23 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1015 ($mul).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1016 ($add) from unsigned to signed.
+Removed top 23 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1016 ($add).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1016 ($add).
+Removed top 22 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1016 ($add).
+Removed top 18 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$shiftx$1019 ($shiftx).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1025 ($sub).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1025 ($sub).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1026 ($mul) from unsigned to signed.
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1026 ($mul).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1026 ($mul).
+Removed top 23 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1026 ($mul).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1027 ($add) from unsigned to signed.
+Removed top 23 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1027 ($add).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1027 ($add).
+Removed top 22 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1027 ($add).
+Removed top 18 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$shiftx$1030 ($shiftx).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1036 ($sub).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$sub$1036 ($sub).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1037 ($mul) from unsigned to signed.
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1037 ($mul).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1037 ($mul).
+Removed top 23 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$mul$1037 ($mul).
+Converting cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1038 ($add) from unsigned to signed.
+Removed top 23 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1038 ($add).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1038 ($add).
+Removed top 22 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1038 ($add).
+Removed top 18 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$shiftx$1041 ($shiftx).
+Removed top 31 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$ge$1043 ($ge).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$lt$1045 ($lt).
+Removed top 29 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1047 ($add).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1047 ($add).
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1048 ($sub).
+Removed top 31 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1048 ($sub).
+Removed top 26 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1048 ($sub).
+Removed top 22 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$shiftx$1051 ($shiftx).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$ge$1053 ($ge).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$lt$1055 ($lt).
+Removed top 28 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1057 ($add).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1057 ($add).
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1058 ($sub).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1058 ($sub).
+Removed top 26 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1058 ($sub).
+Removed top 22 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$shiftx$1061 ($shiftx).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$ge$1063 ($ge).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$lt$1065 ($lt).
+Removed top 28 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1067 ($add).
+Removed top 27 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1067 ($add).
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1068 ($sub).
+Removed top 30 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1068 ($sub).
+Removed top 26 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1068 ($sub).
+Removed top 22 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$shiftx$1071 ($shiftx).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$ge$1073 ($ge).
+Removed top 28 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:14$lt$1075 ($lt).
+Removed top 27 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1077 ($add).
+Removed top 26 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1077 ($add).
+Removed top 26 bits (of 32) from port A of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1078 ($sub).
+Removed top 29 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1078 ($sub).
+Removed top 25 bits (of 32) from port Y of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1078 ($sub).
+Removed top 21 bits (of 32) from port B of cell sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$shiftx$1081 ($shiftx).
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1016_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1048_Y.
+Removed top 27 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1047_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1005_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1078_Y.
+Removed top 25 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$994_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1068_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1038_Y.
+Removed top 27 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1067_Y.
+Removed top 26 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1077_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:19$add$1027_Y.
+Removed top 4 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$sub$1058_Y.
+Removed top 27 bits (of 32) from wire sa_os_5x5.$hardware/rtl/sa_os_5x5.v:15$add$1057_Y.
+
+-- Running command `opt' --
+
+31. Executing OPT pass (performing simple optimizations).
+
+31.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+31.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 10 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 130 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Removed a total of 0 cells.
+
+31.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pe_os..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sa_os_5x5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+31.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pe_os.
+  Optimizing cells in module \sa_os_5x5.
+Performed a total of 0 changes.
+
+31.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 10 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 130 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Removed a total of 0 cells.
+
+31.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pe_os..
+Finding unused cells or wires in module \sa_os_5x5..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+31.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+31.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pe_os..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sa_os_5x5..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+31.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pe_os.
+  Optimizing cells in module \sa_os_5x5.
+Performed a total of 0 changes.
+
+31.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pe_os'.
+Computing hashes of 10 cells of `\pe_os'.
+Finding duplicate cells in `\pe_os'.
+Finding identical cells in module `\sa_os_5x5'.
+Computing hashes of 130 cells of `\sa_os_5x5'.
+Finding duplicate cells in `\sa_os_5x5'.
+Removed a total of 0 cells.
+
+31.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pe_os..
+Finding unused cells or wires in module \sa_os_5x5..
+
+31.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pe_os.
+Optimizing module sa_os_5x5.
+
+31.16. Finished fast OPT passes. (There is nothing left to do.)
+
+-- Running command `check -assert' --
+
+32. Executing CHECK pass (checking for obvious problems).
+Checking module pe_os...
+Checking module sa_os_5x5...
+Found and reported 0 problems.
+
+-- Running command `memory_dff' --
+
+33. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+-- Running command `memory_collect' --
+
+34. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+-- Running command `opt_clean' --
+
+35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pe_os..
+Finding unused cells or wires in module \sa_os_5x5..
+
+-- Running command `check -assert' --
+
+36. Executing CHECK pass (checking for obvious problems).
+Checking module pe_os...
+Checking module sa_os_5x5...
+Found and reported 0 problems.
+
+-- Running command `tee -o results/hardware/generic/sa_os_5x5_cache0_statistics.json stat -json' --
+{
+   "creator": "Yosys 0.71 (git sha1 b4c586fd3, Release, GNU /opt/rh/gcc-toolset-14/root/usr/bin/c++ 14.2.1)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\pe_os": {
+         "num_wires":         18,
+         "num_wire_bits":     203,
+         "num_pub_wires":     14,
+         "num_pub_wire_bits": 152,
+         "num_ports":         13,
+         "num_port_bits":     120,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         10,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$add": 1,
+            "$logic_and": 1,
+            "$logic_or": 1,
+            "$mul": 1,
+            "$reduce_and": 1,
+            "$sdffe": 5
+         }
+      },
+      "\\sa_os_5x5": {
+         "num_wires":         296,
+         "num_wire_bits":     5775,
+         "num_pub_wires":     236,
+         "num_pub_wire_bits": 4911,
+         "num_ports":         8,
+         "num_port_bits":     2005,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         105,
+         "num_submodules":       25,
+         "num_cells_by_type": {
+            "$add": 9,
+            "$eq": 1,
+            "$ge": 5,
+            "$logic_and": 12,
+            "$logic_not": 1,
+            "$lt": 6,
+            "$mul": 5,
+            "$mux": 14,
+            "$not": 2,
+            "$reduce_and": 2,
+            "$reduce_or": 2,
+            "$sdff": 2,
+            "$sdffe": 26,
+            "$shiftx": 10,
+            "$sub": 8,
+            "pe_os": 25
+         }
+      }
+   },
+      "design": {
+         "num_wires":         746,
+         "num_wire_bits":     10850,
+         "num_pub_wires":     586,
+         "num_pub_wire_bits": 8711,
+         "num_ports":         333,
+         "num_port_bits":     5005,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         355,
+         "num_submodules":       25,
+         "num_cells_by_type": {
+            "$add": 34,
+            "$eq": 1,
+            "$ge": 5,
+            "$logic_and": 37,
+            "$logic_not": 1,
+            "$logic_or": 25,
+            "$lt": 6,
+            "$mul": 30,
+            "$mux": 14,
+            "$not": 2,
+            "$reduce_and": 27,
+            "$reduce_or": 2,
+            "$sdff": 2,
+            "$sdffe": 151,
+            "$shiftx": 10,
+            "$sub": 8,
+            "pe_os": 25
+         }
+      }
+}
+
+
+-- Running command `write_json results/hardware/generic/sa_os_5x5_cache0_netlist.json' --
+
+37. Executing JSON backend.
+PASS generic sa_os_5x5 cache 0
