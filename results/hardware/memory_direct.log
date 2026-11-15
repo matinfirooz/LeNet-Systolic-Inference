@@ -1,0 +1,1 @@
+PASS weight_memory cache=0 reads=126 plus cancelled miss; L2=4 clocks; L1 hit=1 clock; response holds; conflict/tail/reset checked

@@ -1,0 +1,13 @@
+memory_direct passed 0.05s
+numerics passed 0.08s
+memory_cache passed 0.08s
+softmax passed 0.07s
+arrays passed 0.19s
+lenet_os_cache0 passed 499.65s
+lenet_ws_cache0 passed 503.27s
+lenet_is_cache0 passed 506.22s
+lenet_os_cache1 passed 513.75s
+lenet_is_cache1 passed 517.91s
+lenet_ws_cache1 passed 518.13s
+protocol_reset_stalls passed 28.85s
+PASS complete regression: 12 cases 97 full-network executions

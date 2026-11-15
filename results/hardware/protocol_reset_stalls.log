@@ -1,0 +1,3 @@
+PASS reset_aborts phases=partial_input,convolution
+FRAME mode=0 cache=1 stalls=1 index=0 label=9 prediction=9 correct=1 total_cycles=1084182 compute_cycles=1082327 ii_cycles=0 tiles=6332 requests=130470 hits=119189 l2_reads=90246 traces=8084 scores=10
+PASS full_network mode=0 cache=1 stalls=1 samples=1 correct=1 intermediate_checks=8084

@@ -1,0 +1,1508 @@
+{
+  "status": "passed",
+  "tool": "Yosys via Pyosys",
+  "version": "0.71",
+  "scope": "Technology-independent process/memory synthesis and connectivity only; FPGA utilization, timing and power are unmeasured.",
+  "cases": [
+    {
+      "top": "sa_ws_5x5",
+      "cache_enable": 0,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdff": 2,
+        "$sdffe": 127,
+        "$reduce_and": 26,
+        "$reduce_or": 27,
+        "$not": 7,
+        "$ge": 10,
+        "$logic_and": 47,
+        "$lt": 11,
+        "$add": 34,
+        "$mul": 40,
+        "$shiftx": 5,
+        "$sub": 9,
+        "$mux": 26,
+        "$and": 5,
+        "$neg": 5,
+        "$or": 5,
+        "$shift": 10,
+        "$eq": 1,
+        "$logic_not": 1
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "sa_ws_5x5/rows[0].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[0].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[0].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[0].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[0].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[1].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[1].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[1].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[1].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[1].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[2].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[2].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[2].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[2].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[2].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[3].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[3].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[3].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[3].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[3].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[4].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[4].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[4].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[4].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_ws_5x5/rows[4].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 0,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/sa_ws_5x5_cache0_netlist.json"
+    },
+    {
+      "top": "sa_os_5x5",
+      "cache_enable": 0,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 151,
+        "$sdff": 2,
+        "$reduce_and": 27,
+        "$reduce_or": 2,
+        "$not": 2,
+        "$ge": 5,
+        "$logic_and": 37,
+        "$lt": 6,
+        "$add": 34,
+        "$shiftx": 10,
+        "$sub": 8,
+        "$mux": 14,
+        "$mul": 30,
+        "$eq": 1,
+        "$logic_not": 1,
+        "$logic_or": 25
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "sa_os_5x5/rows[0].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[0].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[0].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[0].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[0].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[1].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[1].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[1].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[1].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[1].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[2].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[2].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[2].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[2].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[2].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[3].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[3].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[3].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[3].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[3].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[4].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[4].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[4].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[4].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_os_5x5/rows[4].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 0,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/sa_os_5x5_cache0_netlist.json"
+    },
+    {
+      "top": "sa_is_5x5",
+      "cache_enable": 0,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdff": 2,
+        "$sdffe": 127,
+        "$reduce_and": 26,
+        "$reduce_or": 27,
+        "$not": 7,
+        "$ge": 10,
+        "$logic_and": 47,
+        "$lt": 11,
+        "$add": 34,
+        "$shiftx": 5,
+        "$sub": 9,
+        "$mux": 26,
+        "$and": 5,
+        "$mul": 30,
+        "$neg": 5,
+        "$or": 5,
+        "$shift": 10,
+        "$eq": 1,
+        "$logic_not": 1
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "sa_is_5x5/rows[0].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[0].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[0].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[0].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[0].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[1].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[1].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[1].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[1].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[1].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[2].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[2].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[2].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[2].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[2].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[3].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[3].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[3].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[3].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[3].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[4].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[4].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[4].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[4].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "sa_is_5x5/rows[4].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 0,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/sa_is_5x5_cache0_netlist.json"
+    },
+    {
+      "top": "lenet_top_ws",
+      "cache_enable": 0,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 188,
+        "$reduce_or": 38,
+        "$reduce_bool": 24,
+        "$ne": 35,
+        "$reduce_and": 49,
+        "$mux": 219,
+        "$or": 12,
+        "$shift": 19,
+        "$and": 9,
+        "$mul": 57,
+        "$neg": 8,
+        "$not": 13,
+        "$add": 122,
+        "$eq": 53,
+        "$lt": 27,
+        "$logic_not": 14,
+        "$logic_and": 72,
+        "$div": 13,
+        "$mod": 11,
+        "$shiftx": 7,
+        "$logic_or": 11,
+        "$pmux": 29,
+        "$mem_v2": 8,
+        "$dffe": 1,
+        "$sdff": 4,
+        "$ge": 12,
+        "$sub": 12,
+        "$gt": 3
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 8,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/lenet_top_ws_cache0_netlist.json"
+    },
+    {
+      "top": "lenet_top_ws",
+      "cache_enable": 1,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 196,
+        "$reduce_or": 41,
+        "$reduce_bool": 27,
+        "$ne": 47,
+        "$reduce_and": 56,
+        "$mux": 281,
+        "$or": 13,
+        "$shift": 20,
+        "$and": 10,
+        "$mul": 57,
+        "$neg": 9,
+        "$not": 15,
+        "$add": 127,
+        "$eq": 60,
+        "$lt": 30,
+        "$logic_not": 15,
+        "$logic_and": 78,
+        "$div": 13,
+        "$mod": 11,
+        "$shiftx": 8,
+        "$logic_or": 12,
+        "$pmux": 38,
+        "$mem_v2": 10,
+        "$dffe": 1,
+        "$sdff": 4,
+        "$ge": 13,
+        "$sub": 12,
+        "$gt": 3
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[0].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[1].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[2].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[3].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[0].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[1].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[2].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[3].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_ws/u_core/u_array/WS.u_array/rows[4].columns[4].u_pe/$hardware/rtl/pe_ws.v:7$mul$393",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 10,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/lenet_top_ws_cache1_netlist.json"
+    },
+    {
+      "top": "lenet_top_os",
+      "cache_enable": 0,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 212,
+        "$reduce_or": 13,
+        "$reduce_bool": 24,
+        "$ne": 35,
+        "$reduce_and": 50,
+        "$mux": 207,
+        "$or": 7,
+        "$shift": 9,
+        "$and": 4,
+        "$mul": 47,
+        "$neg": 3,
+        "$not": 8,
+        "$add": 122,
+        "$eq": 53,
+        "$lt": 22,
+        "$logic_not": 14,
+        "$logic_and": 62,
+        "$div": 13,
+        "$mod": 11,
+        "$shiftx": 12,
+        "$logic_or": 36,
+        "$pmux": 29,
+        "$mem_v2": 8,
+        "$dffe": 1,
+        "$sdff": 4,
+        "$ge": 7,
+        "$sub": 11,
+        "$gt": 3
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 8,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/lenet_top_os_cache0_netlist.json"
+    },
+    {
+      "top": "lenet_top_os",
+      "cache_enable": 1,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 220,
+        "$reduce_or": 16,
+        "$reduce_bool": 27,
+        "$ne": 47,
+        "$reduce_and": 57,
+        "$mux": 269,
+        "$or": 8,
+        "$shift": 10,
+        "$and": 5,
+        "$mul": 47,
+        "$neg": 4,
+        "$not": 10,
+        "$add": 127,
+        "$eq": 60,
+        "$lt": 25,
+        "$logic_not": 15,
+        "$logic_and": 68,
+        "$div": 13,
+        "$mod": 11,
+        "$shiftx": 13,
+        "$logic_or": 37,
+        "$pmux": 38,
+        "$mem_v2": 10,
+        "$dffe": 1,
+        "$sdff": 4,
+        "$ge": 8,
+        "$sub": 11,
+        "$gt": 3
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[0].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[1].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[2].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[3].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[0].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[1].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[2].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[3].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_os/u_core/u_array/genblk1.OS.u_array/rows[4].columns[4].u_pe/$hardware/rtl/pe_os.v:6$mul$388",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 10,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/lenet_top_os_cache1_netlist.json"
+    },
+    {
+      "top": "lenet_top_is",
+      "cache_enable": 0,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 188,
+        "$reduce_or": 38,
+        "$reduce_bool": 24,
+        "$ne": 35,
+        "$reduce_and": 49,
+        "$mux": 219,
+        "$or": 12,
+        "$shift": 19,
+        "$and": 9,
+        "$mul": 47,
+        "$neg": 8,
+        "$not": 13,
+        "$add": 122,
+        "$eq": 53,
+        "$lt": 27,
+        "$logic_not": 14,
+        "$logic_and": 72,
+        "$div": 13,
+        "$mod": 11,
+        "$shiftx": 7,
+        "$logic_or": 11,
+        "$pmux": 29,
+        "$mem_v2": 8,
+        "$dffe": 1,
+        "$sdff": 4,
+        "$ge": 12,
+        "$sub": 12,
+        "$gt": 3
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 8,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/lenet_top_is_cache0_netlist.json"
+    },
+    {
+      "top": "lenet_top_is",
+      "cache_enable": 1,
+      "status": "passed",
+      "generic_leaf_cells": {
+        "$sdffe": 196,
+        "$reduce_or": 41,
+        "$reduce_bool": 27,
+        "$ne": 47,
+        "$reduce_and": 56,
+        "$mux": 281,
+        "$or": 13,
+        "$shift": 20,
+        "$and": 10,
+        "$mul": 47,
+        "$neg": 9,
+        "$not": 15,
+        "$add": 127,
+        "$eq": 60,
+        "$lt": 30,
+        "$logic_not": 15,
+        "$logic_and": 78,
+        "$div": 13,
+        "$mod": 11,
+        "$shiftx": 8,
+        "$logic_or": 12,
+        "$pmux": 38,
+        "$mem_v2": 10,
+        "$dffe": 1,
+        "$sdff": 4,
+        "$ge": 13,
+        "$sub": 12,
+        "$gt": 3
+      },
+      "compute_pe_multipliers": [
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[0].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[1].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[2].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[3].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[0].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[1].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[2].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[3].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        },
+        {
+          "instance": "lenet_top_is/u_core/u_array/genblk1.IS.u_array/rows[4].columns[4].u_pe/$hardware/rtl/pe_is.v:7$mul$383",
+          "a_bits": 16,
+          "b_bits": 16
+        }
+      ],
+      "generic_memories": 10,
+      "inferred_latches": 0,
+      "netlist": "results/hardware/generic/lenet_top_is_cache1_netlist.json"
+    }
+  ],
+  "sha256": {
+    "hardware/rtl/activation_memory.v": "8416f71e02525b6b69de85e717977d3c6252728fbf43236a5e1dcba08e4c1d6f",
+    "hardware/rtl/argmax_serial.v": "ed754e7c3b3c9ca7a5f844a8c3d843ab8626145147571d283714cb462a2c502c",
+    "hardware/rtl/average_pool.v": "c1f819d4a024446c14229d2ce266513c1fe285179a1a33c72a1e20584ec631f1",
+    "hardware/rtl/bias_rom.v": "ed6707b20fe70590a140e7ffdef41a509fa3dacf049bb5b2cac6c34f2a7a1945",
+    "hardware/rtl/dram_model.v": "08f26a9aaee6d7a943fbf96fe24e1a482f0d2a185ed0b49b910fada12844edd5",
+    "hardware/rtl/files.f": "73cd9c4f9ea77ce5b852ada67dca8a54dc030c2eba904463aa7355fd07ae5d0c",
+    "hardware/rtl/fraction_divider.v": "f09610f5bc79ca929b9560f3fefb75d065270723de47dbe383924fdc533213b1",
+    "hardware/rtl/layer_config.v": "3d871a4522fd16da711dd088ea9a08fbf3915733ef92a4d2aed4da65627af974",
+    "hardware/rtl/lenet_core.v": "884a88acd7a6c0f879e9318855abe5d8cead272da919d4310a6a3c56e70eeb4a",
+    "hardware/rtl/lenet_top_is.v": "cdd6ebb1cea2d74a5c6ed926a6a216bdb0b3cdca6f37e3038d5aa5a127d91842",
+    "hardware/rtl/lenet_top_os.v": "dbcdc75b0d89dd453b5f2925f457be7bd3adcd8073ec81d04184c600d3eda74f",
+    "hardware/rtl/lenet_top_ws.v": "2217a491a2c65afb657cad6fedeaf62a4612c814ad25200846b80197d40e7b42",
+    "hardware/rtl/patch_address.v": "d9e1d144900720cabdc9d4aca7169df651914ef1c7f0d815b6a8e514aa2e02a8",
+    "hardware/rtl/pe_is.v": "367e45a770b9c17f7db2c0183d41e82be3c9e987126996e60294a2fc0cfc83b9",
+    "hardware/rtl/pe_os.v": "a0c71d4d96b98385b1782c5552873c841ccf5a3a2d05f0dab71ce0e9fad716ca",
+    "hardware/rtl/pe_ws.v": "3d730c79c6156f6081560218189155a2ba310ad20a2cd87f14abeca60e0fa0ee",
+    "hardware/rtl/pixel_frontend.v": "0b0e2909cdd55d870cbd6c4820f86b6fa2261350833b9a26e8a7012e865ae65e",
+    "hardware/rtl/pool_address.v": "2a9a1bf698f70c4924cc73fcf23c996fe1c6894b6363b3bbfd72efbbede367ed",
+    "hardware/rtl/sa_is_5x5.v": "7710c6559786626e3e6ab81de98669a8b34278645e06aa481bb359fe12c89cca",
+    "hardware/rtl/sa_os_5x5.v": "3e0ef63a2c2c6b70f140375c0294125b90b06ecbd9616daa891c60028811aa57",
+    "hardware/rtl/sa_tile_engine.v": "0b68c073c62e82f8748d7ff5125f506d8769306062298ad85a26cad6e2e39f50",
+    "hardware/rtl/sa_ws_5x5.v": "2a589f43c3308b465ff0e3bcb0425b6f69e71a03010ba64fce96bc00b9c038b1",
+    "hardware/rtl/softmax10.v": "15caefa1469f876badd02aa0a514f74e6660ad30762fb897dd3a0048d8f5306e",
+    "hardware/rtl/tanh_lut.v": "fa35481c7c65dae09172cca298732ea9febdd0bf32e4df1a36c556a95effd393",
+    "hardware/rtl/tile_accumulator.v": "aa0e03c20613aaa4277af526b6405b8bb44374757a9accccdf99d0219f3bc72c",
+    "hardware/rtl/weight_cache.v": "3d4566abce52c7db53c1096fb8fe3cb69b1ad109233702f32c9f7239824136ec",
+    "hardware/rtl/weight_memory.v": "55712e67c90d76b471617736f160cede0e111e78f0dc87348802f501b93f3eff",
+    "hardware/mem/biases.hex": "66b2a2b6eb775eb8154e8027f0e067fdec0bf466e8d52c07bc76ad3b83adb12a",
+    "hardware/mem/exp.hex": "72c6faed16b428793805e7aa11e689c22f8f5b13fe2a8623650b6e0bd67ba350",
+    "hardware/mem/reference_logits.hex": "24f34964f8e88c3504e0a1117e6c9aa492a633597e4956f3b65cdee51e9aeef5",
+    "hardware/mem/reference_predictions.hex": "24f79691c7dc037744bfa14e2822ab1ab9df262da78c75de65a73877e4f7b6b6",
+    "hardware/mem/reference_probabilities.hex": "241e33695d10ecd0765a8c5f5cb17ce7ed71e0b2fe4166c61b64c2a3874b965f",
+    "hardware/mem/reference_trace.hex": "e57fe2b3724918aa5cecbbd4710fd3f951a22661d9ed75773ba01ffc455e7135",
+    "hardware/mem/tanh.hex": "a4102c0f386059c00c099fc8a244bceeb4db2f778cfd797ee2d2094ab0649b1b",
+    "hardware/mem/test_indices.hex": "58040bcbe9a6cd006a3d47c63130e9fd22dba2a19ac285984e2f629c3e6749f2",
+    "hardware/mem/unit_softmax_logits.hex": "02e66d05bb0cc6eb24b6d027c32e81e49847677b3eebe08824eda29d43ba7335",
+    "hardware/mem/unit_softmax_predictions.hex": "37210ccf0d4a5b83707aa58652747b2944f6d26830d69bd96dab800e4e99e176",
+    "hardware/mem/unit_softmax_probabilities.hex": "e631ea9427c07e6b078dc53c1cd53964504e2afa8a42f6dc02084d1926a2cd02",
+    "hardware/mem/weights.hex": "d0f941e73ef7dd8689662e86f2cbf2e63130cd6426652c764b0ead5ffdeeb4fa"
+  },
+  "mapped_DSPs": null,
+  "mapped_LUTs": null,
+  "routed_clock_MHz": null,
+  "power_watts": null
+}

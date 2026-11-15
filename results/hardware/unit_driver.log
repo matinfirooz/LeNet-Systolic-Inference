@@ -1,0 +1,6 @@
+memory_direct passed 0.08s
+memory_cache passed 0.10s
+numerics passed 0.08s
+softmax passed 0.06s
+arrays passed 0.19s
+PASS complete regression: 5 cases 0 full-network executions

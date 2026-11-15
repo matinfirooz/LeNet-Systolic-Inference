@@ -1,0 +1,1 @@
+PASS arrays: 60 signed matrices x 25 outputs x 3 physically distinct dataflows; latency=14 clocks
