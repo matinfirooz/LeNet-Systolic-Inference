@@ -1,0 +1,13 @@
+Executing code cell 1: import json
+Executing code cell 2: if RETRAIN:
+Executing code cell 3: for name in ['software/data.py','software/model.py','scripts/train.py']:
+Executing code cell 4: import torch
+Executing code cell 5: for mode in ['ws','os','is']:
+Executing code cell 6: for path in sorted((ROOT/'hardware/rtl').glob('*.v')):
+Executing code cell 7: quantization=json.loads((ROOT/'results/software/quantization.json').read_text())
+Executing code cell 8: for name in ['architecture.png','memory_hierarchy.png','wavefront.png']:
+Executing code cell 9: if RUN_RTL:
+Executing code cell 10: evaluation=json.loads((ROOT/'results/evaluation.json').read_text())
+Executing code cell 11: subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-v'],cwd=ROOT,check=True,cap
+Executed 11 code cells successfully in 4.8 seconds.
+Saved: HW3_Matin_Firoozbakht.ipynb
