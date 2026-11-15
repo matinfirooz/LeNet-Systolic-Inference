@@ -1,0 +1,2029 @@
+{
+  "model": [
+    32,
+    32,
+    1
+  ],
+  "parameters": 61706,
+  "useful_MACs": 416520,
+  "physical_array": [
+    5,
+    5
+  ],
+  "tile_calls": 6332,
+  "array_call_cycles": 14,
+  "dataflow_coordinates": {
+    "WS": [
+      "reduction k",
+      "output n"
+    ],
+    "OS": [
+      "spatial m",
+      "output n"
+    ],
+    "IS": [
+      "spatial m",
+      "reduction k"
+    ]
+  },
+  "modules": [
+    {
+      "module": "activation_memory",
+      "role": "Two synchronous activation/output banks",
+      "source": "hardware/rtl/activation_memory.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "read_enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "read_bank",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "read_address",
+          "direction": "input",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "read_data",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "write_enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "write_bank",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "write_address",
+          "direction": "input",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "write_data",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "argmax_serial",
+      "role": "Negative-safe signed comparison and first-index ties",
+      "source": "hardware/rtl/argmax_serial.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "clear",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "index",
+          "direction": "input",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "logit",
+          "direction": "input",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "best_index",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "best_logit",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "average_pool",
+      "role": "Exact four-input mean in Q24 before tanh",
+      "source": "hardware/rtl/average_pool.v",
+      "ports": [
+        {
+          "name": "a",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "b",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "c",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "d",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "mean_q24",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "bias_rom",
+      "role": "236 signed Q24 biases",
+      "source": "hardware/rtl/bias_rom.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "read_enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "address",
+          "direction": "input",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "data",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "dram_model",
+      "role": "Four-cycle held-response weight memory",
+      "source": "hardware/rtl/dram_model.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_address",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "resp_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "resp_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "resp_data",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "read_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "fraction_divider",
+      "role": "Sixteen-step restoring Q16 probability divider",
+      "source": "hardware/rtl/fraction_divider.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "numerator",
+          "direction": "input",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "denominator",
+          "direction": "input",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "quotient",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "layer_config",
+      "role": "Seven fixed layer descriptors",
+      "source": "hardware/rtl/layer_config.v",
+      "ports": [
+        {
+          "name": "layer",
+          "direction": "input",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "pooling",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "positions",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "channels",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "reduction",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "weight_base",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "bias_base",
+          "direction": "output",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "output_words",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "lenet_core",
+      "role": "Complete image ownership, layer/tile sequencing and I/O",
+      "source": "hardware/rtl/lenet_core.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel",
+          "direction": "input",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "pixel_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_index",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "probability",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "logit",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "prediction_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "trace_layer",
+          "direction": "output",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_value",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "trace_logit_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "cycles",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "tile_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "weight_requests",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "cache_hits",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_reads",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "lenet_top_is",
+      "role": "IS synthesis top",
+      "source": "hardware/rtl/lenet_top_is.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel",
+          "direction": "input",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "pixel_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_index",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "probability",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "logit",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "prediction_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "trace_layer",
+          "direction": "output",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_value",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "trace_logit_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "cycles",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "tile_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "weight_requests",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "cache_hits",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_reads",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "lenet_top_os",
+      "role": "OS synthesis top",
+      "source": "hardware/rtl/lenet_top_os.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel",
+          "direction": "input",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "pixel_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_index",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "probability",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "logit",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "prediction_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "trace_layer",
+          "direction": "output",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_value",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "trace_logit_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "cycles",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "tile_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "weight_requests",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "cache_hits",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_reads",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "lenet_top_ws",
+      "role": "WS synthesis top",
+      "source": "hardware/rtl/lenet_top_ws.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel",
+          "direction": "input",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "pixel_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_index",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "probability",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "logit",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "prediction_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "trace_layer",
+          "direction": "output",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "trace_value",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "trace_logit_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "cycles",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "tile_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "weight_requests",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "cache_hits",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_reads",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "patch_address",
+      "role": "On-demand convolution/dense activation address",
+      "source": "hardware/rtl/patch_address.v",
+      "ports": [
+        {
+          "name": "layer",
+          "direction": "input",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "position",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "k_index",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "pe_is",
+      "role": "Stationary activation, south weight, east partial sum",
+      "source": "hardware/rtl/pe_is.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "activation_in",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "b_in",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "bv_in",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sv_in",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sum_in",
+          "direction": "input",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "b_out",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "bv_out",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sv_out",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sum_out",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "pe_os",
+      "role": "Local output accumulation with east A/south B",
+      "source": "hardware/rtl/pe_os.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "clear",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "a_in",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "b_in",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "av_in",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "bv_in",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "a_out",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "b_out",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "av_out",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "bv_out",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "accumulator",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "pe_ws",
+      "role": "Stationary weight, east activation, south partial sum",
+      "source": "hardware/rtl/pe_ws.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "load",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "weight_in",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "a_in",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "av_in",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sv_in",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sum_in",
+          "direction": "input",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "a_out",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "av_out",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sv_out",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "sum_out",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "pixel_frontend",
+      "role": "u8 normalization and 28x28-to-32x32 address mapping",
+      "source": "hardware/rtl/pixel_frontend.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "frame_start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "pixel",
+          "direction": "input",
+          "width": "[7:0]",
+          "signed": false
+        },
+        {
+          "name": "pixel_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "write_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "write_address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "write_data",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        },
+        {
+          "name": "frame_done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "pool_address",
+      "role": "Four addresses per pooled output",
+      "source": "hardware/rtl/pool_address.v",
+      "ports": [
+        {
+          "name": "layer",
+          "direction": "input",
+          "width": "[2:0]",
+          "signed": false
+        },
+        {
+          "name": "output_index",
+          "direction": "input",
+          "width": "[12:0]",
+          "signed": false
+        },
+        {
+          "name": "element",
+          "direction": "input",
+          "width": "[1:0]",
+          "signed": false
+        },
+        {
+          "name": "address",
+          "direction": "output",
+          "width": "[12:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "sa_is_5x5",
+      "role": "5x5 IS grid and right-edge result gathering",
+      "source": "hardware/rtl/sa_is_5x5.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "a_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "b_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "c_tile",
+          "direction": "output",
+          "width": "[1199:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "sa_os_5x5",
+      "role": "5x5 OS grid and parallel accumulator capture",
+      "source": "hardware/rtl/sa_os_5x5.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "a_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "b_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "c_tile",
+          "direction": "output",
+          "width": "[1199:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "sa_tile_engine",
+      "role": "Static dataflow selection at elaboration",
+      "source": "hardware/rtl/sa_tile_engine.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "a_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "b_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "c_tile",
+          "direction": "output",
+          "width": "[1199:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "sa_ws_5x5",
+      "role": "5x5 WS grid and bottom-edge result gathering",
+      "source": "hardware/rtl/sa_ws_5x5.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "a_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "b_tile",
+          "direction": "input",
+          "width": "[399:0]",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "c_tile",
+          "direction": "output",
+          "width": "[1199:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "softmax10",
+      "role": "Maximum, exp table, denominator, probabilities and held class",
+      "source": "hardware/rtl/softmax10.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "start",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "logits",
+          "direction": "input",
+          "width": "[479:0]",
+          "signed": false
+        },
+        {
+          "name": "busy",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "done",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "score_index",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        },
+        {
+          "name": "probability",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "score_logit",
+          "direction": "output",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "prediction_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "prediction",
+          "direction": "output",
+          "width": "[3:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "tanh_lut",
+      "role": "Overflow-safe Q24 to Q12 activation lookup",
+      "source": "hardware/rtl/tanh_lut.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "enable",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "accumulator",
+          "direction": "input",
+          "width": "[47:0]",
+          "signed": true
+        },
+        {
+          "name": "value",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": true
+        }
+      ]
+    },
+    {
+      "module": "tile_accumulator",
+      "role": "25 biased 48-bit accumulators across reduction tiles",
+      "source": "hardware/rtl/tile_accumulator.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "seed",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "accumulate",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "biases",
+          "direction": "input",
+          "width": "[239:0]",
+          "signed": false
+        },
+        {
+          "name": "partial_tile",
+          "direction": "input",
+          "width": "[1199:0]",
+          "signed": false
+        },
+        {
+          "name": "values",
+          "direction": "output",
+          "width": "[1199:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "weight_cache",
+      "role": "1 KiB direct-mapped SRAM with chained L2 line refill",
+      "source": "hardware/rtl/weight_cache.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_address",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "resp_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "resp_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "resp_data",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_req_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "l2_req_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "l2_req_address",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_resp_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "l2_resp_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "l2_resp_data",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "request_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "hit_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    },
+    {
+      "module": "weight_memory",
+      "role": "Direct/cached memory specialization",
+      "source": "hardware/rtl/weight_memory.v",
+      "ports": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "rst",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_valid",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_ready",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "req_address",
+          "direction": "input",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "resp_valid",
+          "direction": "output",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "resp_ready",
+          "direction": "input",
+          "width": "1",
+          "signed": false
+        },
+        {
+          "name": "resp_data",
+          "direction": "output",
+          "width": "[15:0]",
+          "signed": false
+        },
+        {
+          "name": "request_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "hit_count",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        },
+        {
+          "name": "l2_reads",
+          "direction": "output",
+          "width": "[31:0]",
+          "signed": false
+        }
+      ]
+    }
+  ],
+  "figures": [
+    "hardware/figures/architecture.png",
+    "hardware/figures/array_is.png",
+    "hardware/figures/array_os.png",
+    "hardware/figures/array_ws.png",
+    "hardware/figures/memory_hierarchy.png",
+    "hardware/figures/pe_is.png",
+    "hardware/figures/pe_os.png",
+    "hardware/figures/pe_ws.png",
+    "hardware/figures/wavefront.png"
+  ],
+  "numeric_formats": {
+    "weight_bits": 16,
+    "activation_bits": 16,
+    "fractional_bits": 12,
+    "accumulator_bits": 48,
+    "accumulator_fractional_bits": 24,
+    "tanh_entries": 4097,
+    "tanh_grid_step": 0.00390625,
+    "exp_entries": 4097,
+    "probability_bits": 16,
+    "probability_fractional_bits": 16
+  },
+  "weight_memory": {
+    "L2_words": 61470,
+    "L2_word_bits": 16,
+    "L2_response_cycles": 4,
+    "L1_data_bytes": 1024,
+    "L1_lines": 64,
+    "L1_words_per_line": 8,
+    "L1_hit_cycles": 1,
+    "L1_tag_valid_bytes": 64,
+    "refill_request_interval_cycles": 4
+  }
+}
