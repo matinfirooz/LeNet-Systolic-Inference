@@ -1,0 +1,8 @@
+numpy==2.3.5
+torch==2.5.1
+matplotlib==3.10.8
+pandas==2.2.3
+ipython>=8
+jupyterlab>=4
+reportlab>=4
+# Optional generic synthesis: pyosys. Icarus Verilog and Vivado are external tools.
