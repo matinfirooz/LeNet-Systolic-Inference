@@ -1,0 +1,38 @@
+`timescale 1ns/1ps
+module lenet_top_is #(parameter integer CACHE_ENABLE=0)(
+ input wire clk,rst,start,output wire start_ready,busy,
+ input wire pixel_valid,input wire[7:0]pixel,output wire pixel_ready,
+ output wire score_valid,input wire score_ready,output wire[3:0]score_index,
+ output wire[15:0]probability,output wire signed[47:0]logit,
+ output wire prediction_valid,input wire prediction_ready,output wire[3:0]prediction,
+ output wire trace_valid,output wire[2:0]trace_layer,output wire[12:0]trace_address,
+ output wire signed[15:0]trace_value,output wire trace_logit_valid,
+ output wire[31:0]cycles,tile_count,weight_requests,cache_hits,l2_reads);
+ lenet_core #(.DATAFLOW(2),.CACHE_ENABLE(CACHE_ENABLE))u_core(
+  .clk(clk),
+  .rst(rst),
+  .start(start),
+  .start_ready(start_ready),
+  .busy(busy),
+  .pixel_valid(pixel_valid),
+  .pixel(pixel),
+  .pixel_ready(pixel_ready),
+  .score_valid(score_valid),
+  .score_ready(score_ready),
+  .score_index(score_index),
+  .probability(probability),
+  .logit(logit),
+  .prediction_valid(prediction_valid),
+  .prediction_ready(prediction_ready),
+  .prediction(prediction),
+  .trace_valid(trace_valid),
+  .trace_layer(trace_layer),
+  .trace_address(trace_address),
+  .trace_value(trace_value),
+  .trace_logit_valid(trace_logit_valid),
+  .cycles(cycles),
+  .tile_count(tile_count),
+  .weight_requests(weight_requests),
+  .cache_hits(cache_hits),
+  .l2_reads(l2_reads));
+endmodule
